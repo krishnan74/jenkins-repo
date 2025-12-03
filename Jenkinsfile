@@ -16,11 +16,11 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git branch: "${env.GIT_BRANCH}", url: 'https://github.com/krishnan74/jenkins-repo'
-            }
-        }
+        // stage('Checkout') {
+        //     steps {
+        //         git branch: "${env.GIT_BRANCH}", url: 'https://github.com/krishnan74/jenkins-repo'
+        //     }
+        // }
 
         stage('Terraform Init') {
             steps {
