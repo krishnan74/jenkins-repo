@@ -43,7 +43,9 @@ pipeline {
             when {
                 anyOf {
                     branch 'main'
+                    branch 'origin/main'
                     branch 'master'
+                    branch 'origin/master'
                 }
             }
             steps {
@@ -57,7 +59,9 @@ pipeline {
             when {
                 anyOf {
                     branch 'main'
+                    branch 'origin/main'
                     branch 'master'
+                    branch 'origin/master'
                 }
             }
             steps {
