@@ -20,21 +20,20 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building application for ${params.ENVIRONMENT} environment..."
-                // sh './build.sh'
+                
             }
         }
 
         stage('Test') {
             steps {
                 echo "Running tests for ${params.ENVIRONMENT} environment..."
-                // sh './run_tests.sh'
+                
             }
         }
 
         stage('Deploy') {
             steps {
                 echo "Deploying to ${params.ENVIRONMENT} environment..."
-                // sh "./deploy.sh ${params.ENVIRONMENT}"
             }
         }
     }
